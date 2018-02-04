@@ -1,0 +1,235 @@
+{
+  "CelestialScan": {
+    "ScanComplete": [
+      "Scan complete. ",
+      "Surface scan complete. ",
+      "Scan completed. ",
+      "Surface scan completed. ",
+      "Celestial scan complete. ",
+      "Celestial scan completed. ",
+      "I've completed scanning. "
+    ],
+    "AllScansComplete": [
+      "We've completed scanning the system, ready to move on commander",
+      "That was the last scan we needed commander",
+      "And with that we're done in this system",
+      "We've scanned all the celestials we need commander",
+      "All system celestial have now been scanned commander"
+    ],
+    "MultipleScansRemaining": [
+      "{0} more scans to go. ",
+      "{0} more to go. ",
+      "{0} remaining. ",
+      "we need {0} more. ",
+      "{0} more scans remaining. "
+    ],
+    "SingleScanRemaining": [
+      "one more scan to go. ",
+      "one more to go. ",
+      "one remaining. ",
+      "we need one more. ",
+      "one more scan remaining. "
+    ],
+    "ExpeditionComplete": [
+      "We've reached the final destination commander. Our expedition is complete.",
+      "That was the last scan in the expedition. Always the journey, never the destination."
+    ]
+  },
+  "DockSRV": {
+    "Phrases": [
+      "That was fun",
+      "Good to be back",
+      "Always the journey, never the destination",
+      "Are we heading off commander?",
+      "Not all who wander are lost",
+      "Welcome back on board commander",
+      "I wonder if the ship missed us",
+      "Always the journey, never the destination",
+      "Home sweet home"
+    ]
+  },
+  "LaunchSRV": {
+    "Phrases": [
+      "Lets go for a ride",
+      "Time to stretch our legs",
+      "Adventure time",
+      "Lets roll",
+      "I've been looking forward to a roadtrip",
+      "I wonder what's out here"
+    ]
+  },
+  "GameLoad": {
+    "Generic": [
+      "Welcome back Commander"
+    ]
+  },
+  "GetNextSystem": {
+    "Phrases": [
+      "The next system on our journey is {0}",
+      "{0} is the next stop on our journey",
+      "We need to travel to {0} next"
+    ]
+  },
+  "FindNextSystem": {
+    "Phrases": [
+      "Finding next system",
+      "Looking for next system",
+      "Searching for next system",
+      "Searching"
+    ]
+  },
+  "NextScan": {
+    "NextScan": [
+      "Planet {0} is next to be scanned",
+      "We need to scan planet {0} next",
+      "Next on our list is planet {0}",
+      "Next stop planet {0}",
+      "Lets take a look at planet {0} next",
+      "Planet {0} is just dying to be scanned",
+      "Planet {0} is our next stop commander",
+      "I believe planet {0} is next commander",
+      "Planet {0} is the next on our list",
+      "Planet {0} needs a scan next",
+      "Next up, planet {0}",
+      "Lets head to planet {0} next",
+      "We need to head to planet {0} next",
+      "So many scans, so little time. We ought to head to planet {0} next"
+    ],
+    "SkipSystem": [
+      "This system is not part of the expedition",
+      "This system isn't part of our expedition commander",
+      "We're just passing through here, no scans needed",
+      "No scans necessary in this system",
+      "No surface scans are needed in this system",
+      "Surface scans are not required in this system",
+      "We do not need to scan any of the celestials in this system"
+    ],
+    "ScansComplete": [
+      "We've completed scanning the system, ready to move on commander",
+      "There are no more scans needed in this system commander",
+      "Nothing left to scan, we're done here commander",
+      "We can continue with our journey commander, we don't need any more scans",
+      "We've scanned all the planets in this system commander",
+      "All system celestials have been scanned commander"
+    ]
+  },
+  "Initialized": {
+    "Phrases": [
+      "Sextant boot sequence completed",
+      "Sextant online",
+      "Sextant initialized",
+      "Sextant ready to roll",
+      "Sextant activated"
+    ]
+  },
+  "Progress": {
+    "Progress": [
+      "We have been out in the black for {0} days, {1} hours and {2} minutes. and are about {3} percent of the way.",
+      "We are {3} percent of the way into our journey, and have been out here for {0} days, {1} hours and {2} minutes.",
+      "The expedition has taken {0} days, {1} hours and {2} minutes so far, and we are {3} percent of the way there.",
+      "We've been in deep space for {0} days, {1} hours and {2} minutes. In total, we are {3} percent into the expedition.",
+      "We have been travelling for {0} days, {1} hours and {2} minutes. Our trip is roughly {3} percent complete.",
+      "Our trip is approximately {3} percent complete. We have been out here for {0} days, {1} hours and {2} minutes."
+    ],
+    "SystemsScanned": [
+      "We have finished scanning {0} out of {1} total systems",
+      "We are done scanning {0} out of {1} total systems",
+      "In total we've scanned {0} out of {1} systems",
+      "We have finished scanning {0} out of {1} total systems",
+      "We've finished scanning {0} out of {1} total systems",
+      "In total we have scanned {4} out of {1} systems"
+    ]
+  },
+  "Jump": {
+    "Jumping": [
+      "Jumping to {0}",
+      "On route to {0}",
+      "Folding space to {0}"
+    ],
+    "Skipping": [
+      "This system is not part of the expedition",
+      "No scans necessary in this system",
+      "No surface scans are needed in this system",
+      "Surface scans are not required in this system",
+      "We do not need to scan any of the celestials in this system"
+    ],
+    "Scanning": [
+      "We need to scan {0} celestial in this system. There ",
+      "{0} planets require a scan in this system. There ",
+      "{0} celestials require a scan in this system. There ",
+      "This system has {0} planets we need to scan. There ",
+      "This system has {0} celestial we need to scan. There "
+    ],
+    "AlreadyScanned": [
+      "We've already been through here, nothing to scan",
+      "We've been here before, nothing left to scan",
+    ],
+    "AndPhrase": "and",
+    "IsPhrase": "is",
+    "ArePhrase": "are",
+    "PluralPhrase": "s"
+  },
+  "ScansRemaining": {
+    "SkipSystem": [
+      "This system is not part of the expedition",
+      "No scans necessary in this system",
+      "No surface scans are needed in this system",
+      "This system isn't part of our expedition commander",
+      "We're just passing through here, no scans needed",
+      "Surface scans are not required in this system",
+      "We do not need to scan any of the celestials in this system"
+    ],
+    "SystemComplete": [
+      "We've completed scanning the system, ready to move on commander",
+      "There are no more scans needed in this system commander",
+      "Nothing left to scan, we're done here commander",
+      "We can continue with our journey commander, we don't need any more scans",
+      "We've scanned all the planets in this system commander",
+      "All system celestials have been scanned commander"
+    ],
+    "ScansRemaining": [
+      "There are {0} planets we still need to scan. They are {1}",
+      "We need to scan down {0} more planets commander. {1}",
+      "{0} more scans needed in this system commander. {1}",
+      "{0} more to go commander. We just need {1}"
+    ],
+    "AndPhrase": "and",
+    "PlanetPhrase": "planet"
+  },
+  "PlotExpedition": {
+    "ExpeditionExists": "I have already plotted an expedition. I can either cancel the existing expedition, or extend it",
+    "ExpeditionPlotted": "Expedition plotted. Route consists of {0} systems with {1} planets. In total, there are ",
+    "UnableToPlot": "Unable to plot expedition.",
+    "AndPhrase": "and",
+    "PluralPhrase": "s"
+  },
+  "SkipSystem": {
+    "SystemScanned": [
+      "Skipping this system",
+      "Skipping this system, moving on",
+      "System marked as scanned",
+      "System marked as scanned, moving on"
+    ],
+    "Error": "Error marking system as scanned"
+  },
+  "RescanSystem": {
+    "SystemUnscanned": [
+      "Ready to rescan system, navigation data has been updated",
+      "Updating navigation data. Celestials ready to be scanned",
+      "Navigation data updated. System ready to be scanned"
+    ],
+    "Error": "Error marking system as scanned"
+  },
+  "CancelExpedition": {
+    "Warning": "Warning. Cancelling the expedition will result in permanent loss of all expedition data. Please repeat the command to confirm",
+    "Complete": "Expedition data deleted. Ready to plot new expedition",
+    "Error": "Error deleting expedition data"
+  },
+  "Greeting": {
+    "Phrases": [
+      "Hello Commander",
+      "Greetings Commander",
+      "Yes Commander?"
+    ]
+  }
+}

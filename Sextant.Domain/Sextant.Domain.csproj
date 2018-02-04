@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AA8F025-1182-471C-BE6F-E8A8C9892792}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sextant.Domain</RootNamespace>
+    <AssemblyName>Sextant.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CancelExpeditionCommand.cs" />
+    <Compile Include="Commands\CelestialScanCommand.cs" />
+    <Compile Include="Commands\ClearComsCommand.cs" />
+    <Compile Include="Commands\CommandExecutor.cs" />
+    <Compile Include="Commands\CommandRegistry.cs" />
+    <Compile Include="Commands\DockSRVCommand.cs" />
+    <Compile Include="Commands\ExtendExpeditionCommand.cs" />
+    <Compile Include="Commands\FindNextSystemCommand.cs" />
+    <Compile Include="Commands\GameLoadCommand.cs" />
+    <Compile Include="Commands\GetNextSystemCommand.cs" />
+    <Compile Include="Commands\GreetingCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\ICommandExecutor.cs" />
+    <Compile Include="Commands\ICommandRegistry.cs" />
+    <Compile Include="Commands\InitializedCommand.cs" />
+    <Compile Include="Commands\JumpCommand.cs" />
+    <Compile Include="Commands\JumpCompleteCommand.cs" />
+    <Compile Include="Commands\LaunchSRVCommand.cs" />
+    <Compile Include="Commands\LocationCommand.cs" />
+    <Compile Include="Commands\NextScanCommand.cs" />
+    <Compile Include="Commands\PlanExpeditionCommand.cs" />
+    <Compile Include="Commands\ProgressCommand.cs" />
+    <Compile Include="Commands\RescanSystemCommand.cs" />
+    <Compile Include="Commands\ResponseCommandBase.cs" />
+    <Compile Include="Commands\ScansRemainingCommand.cs" />
+    <Compile Include="Commands\SkipSystemCommand.cs" />
+    <Compile Include="Entities\Celestial.cs" />
+    <Compile Include="Entities\StarSystem.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="ICommunicator.cs" />
+    <Compile Include="IDataStore.cs" />
+    <Compile Include="IGalaxyMap.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="INavigationRepository.cs" />
+    <Compile Include="INavigator.cs" />
+    <Compile Include="IPlayerStatus.cs" />
+    <Compile Include="IUserDataService.cs" />
+    <Compile Include="Navigator.cs" />
+    <Compile Include="PhraseBook.cs" />
+    <Compile Include="Phrases\CancelExpeditionPhrases.cs" />
+    <Compile Include="Phrases\CelestialScanPhrases.cs" />
+    <Compile Include="Phrases\DockSRVPhrases.cs" />
+    <Compile Include="Phrases\FindNextSystemPhrases.cs" />
+    <Compile Include="Phrases\GameLoadPhrases.cs" />
+    <Compile Include="Phrases\GetNextSystemPhrases.cs" />
+    <Compile Include="Phrases\GreetingPhrases.cs" />
+    <Compile Include="Phrases\InitializedPhrases.cs" />
+    <Compile Include="Phrases\JumpPhrases.cs" />
+    <Compile Include="Phrases\LaunchSRVPhrases.cs" />
+    <Compile Include="Phrases\NextScanPhrases.cs" />
+    <Compile Include="Phrases\PlotExpeditionPhrases.cs" />
+    <Compile Include="Phrases\ProgressPhrases.cs" />
+    <Compile Include="Phrases\RescanSystemPhrases.cs" />
+    <Compile Include="Phrases\ScansRemainingPhrases.cs" />
+    <Compile Include="Phrases\SkipSystemPhrases.cs" />
+    <Compile Include="Preferences.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,18 @@
+﻿{
+  "JournalWatcher": {
+    "JournalDirectory": "C:\\Users\\YourNameHere\\Saved Games\\Frontier Developments\\Elite Dangerous\\"
+  },
+  "VoiceCommunicator": {
+    "Voice": "Microsoft Zira Desktop"
+  },
+  "GalaxyMapInteractor": {
+    "GalaxyMapKey": "T",
+    "NextUIPanelKey": "]",
+    "UISelectKey": " ",
+    "GalaxyMapOpenDelay": "2500",
+    "GalaxyMapUINavigateDelay": "100"
+  },
+  "Preferences": {
+    "CommunicateSkippableSystems": "true"
+  }
+}
