@@ -12,7 +12,7 @@ namespace Sextant.Infrastructure.Repository
 
         private static readonly object sync = new object();
 
-        private static PlayerStatus _playerStatus;
+        private PlayerStatus _playerStatus;
         private readonly IDataStore<PlayerStatus> _dataStore;
 
         public string Location           => _playerStatus.Location;
