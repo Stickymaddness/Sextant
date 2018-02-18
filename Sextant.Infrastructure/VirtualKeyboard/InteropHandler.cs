@@ -14,7 +14,7 @@ namespace Sextant.Infrastructure.VirtualKeyboard
             return MapVkToScanCodeEx(new VK_Helper { Value = VkKeyScan(c) }.Low);
         }
 
-        internal static void KeyPress(IReadOnlyCollection<uint> scanCodesEx, int duration = 40)
+        internal static void KeyPress(IReadOnlyCollection<uint> scanCodesEx, int duration = 100)
         {
             KeyDown(scanCodesEx);
             Thread.Sleep(duration);
