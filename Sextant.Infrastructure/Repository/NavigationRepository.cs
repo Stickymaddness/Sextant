@@ -25,14 +25,14 @@ namespace Sextant.Infrastructure.Repository
         public bool UnscanSystem(string system)               => UpdateSystem(system, false);
         public List<StarSystem> GetSystems()                  => _repository.FindAll().ToEntities().ToList();
         public StarSystem GetLastScannedSystem()              => _repository.Find(x => x.Scanned).Last().ToEntity();
-        public StarSystem GetSystem(string name)              => _repository.FindOne(s => s.Name == name)?.ToEntity();
+        public StarSystem GetSystem(string name)              => _repository.FindOne(s => s.Name.ToUpper() == name.ToUpper())?.ToEntity();
         public StarSystem GetFirstUnscannedSystem()           => _repository.FindOne(x => x.Scanned == false)?.ToEntity();
         public List<StarSystem> GetUnscannedSystems()         => _repository.Find(x => x.Scanned == false).ToEntities().ToList();
         public List<StarSystem> GetAllExpeditionStarSystems() => _repository.FindAll().ToEntities().ToList();
 
         private bool UpdateSystem(string system, bool scanned)
         {
-            StarSystemDocument document = _repository.FindOne(s => s.Name == system);
+            StarSystemDocument document = _repository.FindOne(s => s.Name.ToUpper() == system.ToUpper());
 
             if (document == null)
                 return false;
@@ -50,7 +50,7 @@ namespace Sextant.Infrastructure.Repository
             if (document == null)
                 return false;
 
-            document.Celestials.Single(c => c.Name == celestial).Scanned = true;
+            document.Celestials.Single(c => c.Name.ToUpper() == celestial.ToUpper()).Scanned = true;
 
             if (document.Celestials.All(c => c.Scanned))
                 document.Scanned = true;
