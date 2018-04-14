@@ -3,29 +3,24 @@
 
 using System.Linq;
 using System.Collections.Generic;
+using WindowsInput;
+using WindowsInput.Native;
 
 namespace Sextant.Infrastructure.VirtualKeyboard
 {
     internal static class KeystrokeService
     {
-        private const uint _enterCode = 28;
+        private static InputSimulator _inputSimulator = new InputSimulator();
 
         internal static void SendKeystokes(string keys)
         {
-            var keyList          = keys.ToUpper().ToCharArray();
-            List<uint> scanCodes = keyList.Select(k => InteropHandler.ConvertKey(k)).ToList();
-
-            InteropHandler.KeyPress(scanCodes);
-        }
-
-        internal static void SendKeystoke(uint code)
-        {
-            InteropHandler.KeyPress(new List<uint> { code });
+            _inputSimulator.Keyboard.TextEntry(keys);
         }
 
         internal static void SendEnter()
         {
-            InteropHandler.KeyPress(new List<uint> { _enterCode });
+            _inputSimulator.Keyboard.KeyDown(VirtualKeyCode.RETURN);
+            _inputSimulator.Keyboard.KeyUp(VirtualKeyCode.RETURN);
         }
     }
 }
