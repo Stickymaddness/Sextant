@@ -77,7 +77,6 @@
     <Compile Include="Settings\JournalWatcherSettings.cs" />
     <Compile Include="Settings\VoiceCommunicatorSettings.cs" />
     <Compile Include="TextToSpeech\VoiceCommunicator.cs" />
-    <Compile Include="VirtualKeyboard\InteropHandler.cs" />
     <Compile Include="VirtualKeyboard\KeystrokeService.cs" />
     <Compile Include="VoiceAttackEvent.cs" />
   </ItemGroup>
