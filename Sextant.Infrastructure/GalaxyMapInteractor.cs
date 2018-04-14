@@ -19,7 +19,7 @@ namespace Sextant.Infrastructure
 
         private void SendKey(string key, int delay)
         {
-            KeystrokeService.SendKeystokes(key);
+            KeystrokeService.SendKeystrokes(key);
             Thread.Sleep(delay);
         }
 
@@ -29,7 +29,7 @@ namespace Sextant.Infrastructure
             SendKey(_settings.NextUIPanelKey, _settings.GalaxyMapUINavigateDelay);
             SendKey(_settings.UISelectKey, _settings.GalaxyMapUINavigateDelay);
 
-            KeystrokeService.SendKeystokes(system);
+            KeystrokeService.SendKeystrokes(system);
 
             KeystrokeService.SendEnter();
         }
