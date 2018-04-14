@@ -6,7 +6,7 @@
     "Voice": "Microsoft Zira Desktop"
   },
   "GalaxyMapInteractor": {
-    "GalaxyMapKey": "T",
+    "GalaxyMapKey": "t",
     "NextUIPanelKey": "]",
     "UISelectKey": " ",
     "GalaxyMapOpenDelay": "2500",
