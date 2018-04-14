@@ -13,7 +13,7 @@ namespace Sextant.VoiceAttack
 
         public static string VA_DisplayName()
         {
-            return "Sextant v1.0.0";
+            return "Sextant v1.0.1";
         }
 
         public static string VA_DisplayInfo()
