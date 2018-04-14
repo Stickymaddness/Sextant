@@ -19,7 +19,7 @@ namespace Sextant.Infrastructure
 
         private void SendKey(string key, int delay)
         {
-            KeystrokeService.SendKeystrokes(key);
+            KeystrokeService.SendSingleKeyPress(key);
             Thread.Sleep(delay);
         }
 
