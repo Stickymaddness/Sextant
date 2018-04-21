@@ -10,7 +10,8 @@
     "NextUIPanelKey": "]",
     "UISelectKey": " ",
     "GalaxyMapOpenDelay": "2500",
-    "GalaxyMapUINavigateDelay": "100"
+    "GalaxyMapUINavigateDelay": "100",
+    "KeyDownDuration":  5
   },
   "Preferences": {
     "CommunicateSkippableSystems": "true"

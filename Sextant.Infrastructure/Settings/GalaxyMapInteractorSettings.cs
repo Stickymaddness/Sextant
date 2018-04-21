@@ -10,5 +10,6 @@ namespace Sextant.Infrastructure.Settings
         public string UISelectKey { get; set; }
         public int GalaxyMapOpenDelay { get; set; }
         public int GalaxyMapUINavigateDelay { get; set; }
+        public int KeyDownDuration { get; set; }
     }
 }

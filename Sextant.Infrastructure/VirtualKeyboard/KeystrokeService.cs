@@ -13,10 +13,14 @@ namespace Sextant.Infrastructure.VirtualKeyboard
 
         [DllImport("user32.dll")] static extern short VkKeyScan(char ch);
 
+        private static int KeyPressDuration = 5;
+
+        internal static void SetKeyPressDuration(int duration) => KeyPressDuration = duration;
+
         internal static void SendKeystrokes(string keys)
         {
             _inputSimulator.Keyboard.TextEntry(keys);
-            _inputSimulator.Keyboard.Sleep(10);
+            _inputSimulator.Keyboard.Sleep(KeyPressDuration);
         }
 
         internal static void SendSingleKeyPress(string key)
@@ -25,14 +29,14 @@ namespace Sextant.Infrastructure.VirtualKeyboard
             var keyCode   = (VirtualKeyCode)scanCode;
 
             _inputSimulator.Keyboard.KeyDown(keyCode);
-            _inputSimulator.Keyboard.Sleep(10);
+            _inputSimulator.Keyboard.Sleep(KeyPressDuration);
             _inputSimulator.Keyboard.KeyUp(keyCode);
         }
 
         internal static void SendEnter()
         {
             _inputSimulator.Keyboard.KeyDown(VirtualKeyCode.RETURN);
-            _inputSimulator.Keyboard.Sleep(10);
+            _inputSimulator.Keyboard.Sleep(KeyPressDuration);
             _inputSimulator.Keyboard.KeyUp(VirtualKeyCode.RETURN);
         }
     }

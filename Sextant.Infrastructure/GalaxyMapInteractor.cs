@@ -15,6 +15,7 @@ namespace Sextant.Infrastructure
         public GalaxyMapInteractor(GalaxyMapInteractorSettings settings)
         {
             _settings = settings;
+            KeystrokeService.SetKeyPressDuration(settings.KeyDownDuration);
         }
 
         private void SendKey(string key, int delay)
